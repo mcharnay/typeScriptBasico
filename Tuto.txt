@@ -1,0 +1,23 @@
+con node:
+(en terminal de vsCode).
+npm install -g typescript
+
+//si no se pone esto no deja usar el compilador
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+//compilador a nombreArchivo.js
+tsc nombreArchivo.ts
+
+//modo observador:
+tsc app.ts -w
+
+//modo observador para todos los archivos todo el rato:
+tsc *.ts -w
+
+//hacer que tsc siempre esté andando
+tsc -init
+
+//valores de tipo any pueden ser de cualquier tipo.
+let vengador:any = ""Superman;
+
+//los objetos se pueden reinicializar si se respetan el mismo tipo de propiedades.
